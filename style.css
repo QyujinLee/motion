@@ -1,0 +1,82 @@
+/* Global */
+
+:root {
+  --bg-main-color: #00000080;
+  --bg-accent-color: #2d2d2d;
+  --accent-color: #f64435;
+  --text-accent-color: #ffe498;
+  --text-edit-bg-color: #575757;
+  --border-color: #3f3f3f;
+  --shadow-color: #202020;
+  --document-bg-color: #68686850;
+  --component-bg-gradient: radial-gradient(
+    circle,
+    #646464e6 0%,
+    #363636e6 100%
+  );
+  --smokywhite: #dddbd8;
+  --black: #000000;
+  --translucent-black: #00000099;
+}
+
+h1 {
+  color: var(--accent-color);
+}
+
+h3 {
+  color: var(--smokywhite);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: url(image/background.png) center/cover no-repeat;
+}
+
+#container {
+  margin: auto;
+  width: 900px;
+  height: 100vh;
+}
+
+#header {
+  background-color: var(--bg-main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 10px;
+}
+
+.buttons {
+  margin-bottom: 30px;
+}
+
+.buttons > button {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  color: var(--smokywhite);
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0px 3px;
+}
+
+#contents {
+  background-color: var(--document-bg-color);
+  overflow: auto;
+  height: 625px;
+}
+
+#footer {
+  margin: auto;
+  bottom: 0px;
+  position: absolute;
+  background-color: var(--bg-main-color);
+  width: inherit;
+  text-align: center;
+}
+
+.popup {
+  display: none;
+}
