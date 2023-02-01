@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Motion</title>
+    <script
+      src="https://kit.fontawesome.com/459cdeaf16.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <script type="module" defer src="./build/main.js"></script>
   </head>
@@ -20,18 +24,22 @@
         </div>
       </div>
       <div id="contents"></div>
+      <div class="popup">
+        <button class="close__button">
+          <i class="fa-solid fa-xmark fa-2xl"></i>
+        </button>
+        <div class="popup__box">
+          <h3>Title</h3>
+          <input type="text" />
+        </div>
+        <div class="popup__box">
+          <h3>URL</h3>
+          <input type="text" />
+        </div>
+        <button class="add__button">ADD</button>
+      </div>
       <div id="footer"><h3>copyright reserved by gyujin</h3></div>
     </div>
-    <div class="popup">
-      <button class="close__button">x</button>
-      <div class="popup__box">
-        <h3>Title</h3>
-        <input type="text" />
-      </div>
-      <div class="popup__box">
-        <h3>URL</h3>
-        <input type="text" />
-      </div>
-    </div>
+    <div class="dimmed"></div>
   </body>
 </html>

@@ -78,5 +78,68 @@ body {
 }
 
 .popup {
+  background: var(--component-bg-gradient);
   display: none;
+  position: absolute;
+  margin: auto;
+  z-index: 2;
+  top: 40vh;
+  left: 45vh;
+  width: 730px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.popup__box {
+  margin: 10px 0;
+}
+
+.popup__box h3 {
+  color: var(--text-accent-color);
+}
+
+.popup__box input {
+  width: 722px;
+  height: 30px;
+  margin: 0px 0px 10px 0px;
+  border-color: var(--border-color);
+  background-color: var(--text-edit-bg-color);
+  font-size: large;
+  color: var(--smokywhite);
+}
+
+.popup .close__button {
+  position: relative;
+  background: none;
+  font-weight: 700;
+  color: var(--accent-color);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0px 3px;
+  left: 700px;
+}
+
+.popup .add__button {
+  position: relative;
+  left: 663px;
+  background-color: var(--accent-color);
+  color: var(--smokywhite);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0px 3px;
+  padding: 5px 20px;
+  font-weight: 700;
+}
+
+.dimmed {
+  top: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
 }
